@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Gunther Reiche, diseñador gráfico y de branding en Guatemala: campañas BTL, identidad corporativa, packaging y piezas editoriales. Disponible para nuevos proyectos.">
+  <meta name="author" content="Gunther Reiche">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_GT">
+  <meta property="og:title" content="Gunther Reiche · Diseño gráfico y branding">
+  <meta property="og:description" content="Campañas BTL, identidad corporativa, packaging y piezas editoriales. Portafolio de Gunther Reiche, Guatemala.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ctext x='32' y='44' font-size='34' font-family='Arial' font-weight='800' fill='%23fff' text-anchor='middle'%3EGR%3C/text%3E%3C/svg%3E">
+  <title>Gunther Reiche · Diseño gráfico y branding · Guatemala</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#trabajo">Saltar al contenido</a>
+  <header class="topbar">
+    <a href="#top" class="logo">GUNTHER REICHE<br><span class="star">✻</span> DISEÑO GRÁFICO</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#trabajo" data-sec="trabajo">Trabajo</a>
+      <a href="#servicios" data-sec="servicios">Servicios</a>
+      <a href="#estudio" data-sec="estudio">Estudio</a>
+      <a href="#contacto" data-sec="contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: proyectos a pantalla completa -->
+    <section class="hero" id="top">
+      <img class="hero__slide is-on" src="hero/lluvia.jpg" alt="" data-proj="lluvia">
+      <img class="hero__slide" src="hero/valentia.jpg" alt="" loading="lazy" data-proj="valentia">
+      <img class="hero__slide" src="hero/ojo.jpg" alt="" loading="lazy" data-proj="ojo">
+      <img class="hero__slide" src="hero/lookagain.jpg" alt="" loading="lazy" data-proj="lookagain">
+      <img class="hero__slide" src="hero/edad.jpg" alt="" loading="lazy" data-proj="edad">
+      <div class="hero__shade"></div>
+      <div class="hero__note">
+        <h1 class="hero__lead">Diseño gráfico y branding para marcas que quieren destacar.</h1>
+        <p class="hero__sub">Gunther Reiche · Guatemala · Disponible para nuevos proyectos</p>
+        <div class="hero__cta">
+          <a class="btn" href="#trabajo">Ver trabajo</a>
+          <a class="btn btn--ghost" href="mailto:nextgunther21r@gmail.com?subject=Contacto%20desde%20tu%20portafolio">Escríbeme</a>
+        </div>
+      </div>
+      <button class="hero__caption" id="heroCaption" type="button"></button>
+    </section>
+
+    <!-- TRABAJO -->
+    <section class="section" id="trabajo">
+      <h2 class="label">Trabajo <sup id="workCount">6</sup></h2>
+      <div class="filters" role="group" aria-label="Filtrar trabajo">
+        <button type="button" class="chip is-on" data-f="todos">Todos</button>
+        <button type="button" class="chip" data-f="btl">Campañas BTL</button>
+        <button type="button" class="chip" data-f="branding">Branding</button>
+        <button type="button" class="chip" data-f="packaging">Packaging</button>
+        <button type="button" class="chip" data-f="editorial">Editorial</button>
+      </div>
+      <div class="work">
+      <article class="piece reveal" role="button" tabindex="0" data-proj="lluvia" data-cat="btl" aria-label="Ver 30 Días de Lluvia">
+        <div class="piece__img"><img src="assets/lluvia/p-22.jpg" alt="Portada de 30 Días de Lluvia" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">30 Días de Lluvia</span><span class="piece__tag">Netflix x Pringles · Campaña BTL · 2026</span></div>
+        <p class="piece__desc">Co-branding inspirado en «El hombre ilustrado»: domo en centro comercial, racha de 30 días y votación con la lata como papeleta.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="edad" data-cat="btl" aria-label="Ver A su edad yo…">
+        <div class="piece__img"><img src="assets/edad/p-03.jpg" alt="Portada de A su edad yo…" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">A su edad yo…</span><span class="piece__tag">UNICEF Guatemala · Campaña BTL · 2026</span></div>
+        <p class="piece__desc">Campaña sobre trabajo infantil dirigida a comerciantes de mercado. Dirección estratégica e investigación en equipo de tres.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="valentia" data-cat="packaging btl" aria-label="Ver Doritos Twice">
+        <div class="piece__img"><img src="assets/valentia/p-21.jpg" alt="Portada de Doritos Twice" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">Doritos Twice</span><span class="piece__tag">Packaging y BTL · 2026</span></div>
+        <p class="piece__desc">Empaque y dos piezas BTL pensados para la generación Z y la cultura del agotamiento.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="lookagain" data-cat="btl" aria-label="Ver LOOK AGAIN">
+        <div class="piece__img"><img src="assets/lookagain/p-18.jpg" alt="Portada de LOOK AGAIN" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">LOOK AGAIN</span><span class="piece__tag">Exposición callejera · BTL · 2026</span></div>
+        <p class="piece__desc">Exposición secreta en la Avenida de las Américas, con mecánica de búsqueda del tesoro y sistema visual propio.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="ojo" data-cat="branding" aria-label="Ver OJO">
+        <div class="piece__img"><img src="assets/ojo/p-14.jpg" alt="Portada de OJO" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">OJO</span><span class="piece__tag">Identidad corporativa · 2026</span></div>
+        <p class="piece__desc">Identidad para una agencia de publicidad a partir de un nombre palíndromo y un sistema bilateral.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="ballet" data-cat="editorial" aria-label="Ver Ballet in New York">
+        <div class="piece__img"><img src="assets/ballet/p-09.jpg" alt="Portada de Ballet in New York" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">Ballet in New York</span><span class="piece__tag">Calendario 2027 · 2026</span></div>
+        <p class="piece__desc">Calendario inspirado en Paul Rand y Saul Bass, desde la Escuela de Nueva York.</p>
+      </article>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <h2 class="label">Servicios</h2>
+      <div class="serv">
+        <ul class="serv__list reveal">
+          <li><span>01</span>Identidad y branding</li>
+          <li><span>02</span>Campañas y activaciones BTL</li>
+          <li><span>03</span>Packaging</li>
+          <li><span>04</span>Piezas editoriales y calendarios</li>
+          <li><span>05</span>Motion y video</li>
+          <li><span>06</span>Diseño y maquetación web</li>
+        </ul>
+        <div class="serv__tools reveal">
+          <p class="serv__h">Herramientas</p>
+          <p>Photoshop · Illustrator · InDesign · After Effects · Premiere Pro · HTML · CSS · JavaScript</p>
+          <p class="serv__h">Cómo trabajo</p>
+          <p>Del concepto a la pieza final: investigación, estrategia, sistema visual y entrega lista para producción.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section class="section" id="estudio">
+      <h2 class="label">Estudio</h2>
+      <div class="estudio">
+        <p class="estudio__big reveal">Soy Gunther, diseñador gráfico apasionado por transformar ideas en identidades visuales memorables. <span class="grey">Combino estrategia de marca, dirección creativa y conocimientos de programación para construir proyectos que comunican con propósito, desde el concepto hasta la pantalla.</span></p>
+        <div class="caps reveal">
+          <div class="cap"><span class="cap__num">01</span><span class="cap__name">Estratega</span><span class="cap__desc">Planifico cada proyecto con visión y objetivos claros.</span></div>
+          <div class="cap"><span class="cap__num">02</span><span class="cap__name">Visionario</span><span class="cap__desc">Anticipo tendencias y creo conceptos que destacan.</span></div>
+          <div class="cap"><span class="cap__num">03</span><span class="cap__name">Branding</span><span class="cap__desc">Construyo identidades de marca sólidas y coherentes.</span></div>
+        </div>
+        <p class="estudio__faith reveal">Con Dios todo es posible.</p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact" id="contacto">
+      <h2 class="label">Contacto</h2>
+      <p class="contact__big reveal"><span class="grey">¿Tienes un proyecto o una vacante en mente?</span> Hablemos.</p>
+      <div class="contact__row">
+        <a class="contact__mail" href="mailto:nextgunther21r@gmail.com?subject=Contacto%20desde%20tu%20portafolio">nextgunther21r@gmail.com</a>
+        <button type="button" class="btn btn--ghost" id="copyMail" data-mail="nextgunther21r@gmail.com">Copiar correo</button>
+      </div>
+      <p class="contact__note" id="copyNote" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>© <span id="year"></span> Gunther Reiche</span>
+    <span>Con Dios todo es posible ✝</span>
+  </footer>
+
+  <!-- VISOR DE PROYECTOS -->
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle" hidden>
+    <div class="viewer__bar">
+      <div>
+        <div class="viewer__title" id="viewerTitle"></div>
+        <div class="viewer__meta" id="viewerMeta"></div>
+      </div>
+      <div class="viewer__nav">
+        <button type="button" id="viewerPrev" aria-label="Proyecto anterior">← Anterior</button>
+        <button type="button" id="viewerNext" aria-label="Proyecto siguiente">Siguiente →</button>
+        <button class="viewer__close" id="viewerClose" type="button">Cerrar ✕</button>
+      </div>
+    </div>
+    <div class="viewer__scroll" id="viewerScroll"></div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---------- Proyectos ----------
+    const ORDEN = ['lluvia', 'edad', 'valentia', 'lookagain', 'ojo', 'ballet'];
+    const PROYECTOS = {
+      lluvia: { titulo: "30 Días de Lluvia", paginas: 31 },
+      edad: { titulo: "A su edad yo…", paginas: 20 },
+      valentia: { titulo: "Doritos Twice", paginas: 30 },
+      lookagain: { titulo: "LOOK AGAIN", paginas: 24 },
+      ojo: { titulo: "OJO", paginas: 21 },
+      ballet: { titulo: "Ballet in New York", paginas: 10 },
+    };
+
+    // ---------- Hero: rota entre proyectos ----------
+    const slides = [...document.querySelectorAll('.hero__slide')];
+    const heroCaption = document.getElementById('heroCaption');
+    let actual = 0;
+    function mostrarSlide(i) {
+      slides.forEach((s, k) => s.classList.toggle('is-on', k === i));
+      const p = PROYECTOS[slides[i].dataset.proj];
+      heroCaption.textContent = p.titulo;
+      heroCaption.dataset.proj = slides[i].dataset.proj;
+      actual = i;
+    }
+    mostrarSlide(0);
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => mostrarSlide((actual + 1) % slides.length), 4200);
+    }
+
+    // ---------- Visor ----------
+    const viewer = document.getElementById('viewer');
+    const viewerScroll = document.getElementById('viewerScroll');
+    const viewerClose = document.getElementById('viewerClose');
+    let ultimoOrigen = null;
+    let actualSlug = null;
+
+    function abrirProyecto(slug, origen) {
+      const p = PROYECTOS[slug];
+      if (!p) return;
+      ultimoOrigen = origen;
+      document.getElementById('viewerTitle').textContent = p.titulo;
+      document.getElementById('viewerMeta').textContent = (ORDEN.indexOf(slug) + 1) + ' / ' + ORDEN.length + ' · ' + p.paginas + ' páginas';
+      actualSlug = slug;
+      try { history.replaceState(null, '', '#p-' + slug); } catch (e) {}
+      viewerScroll.innerHTML = '';
+      for (let i = 1; i <= p.paginas; i++) {
+        const img = document.createElement('img');
+        img.src = 'assets/' + slug + '/p-' + String(i).padStart(2, '0') + '.jpg';
+        img.alt = p.titulo + ', página ' + i;
+        img.width = 1280; img.height = 720;
+        img.loading = i <= 2 ? 'eager' : 'lazy';
+        viewerScroll.appendChild(img);
+      }
+      const fin = document.createElement('div');
+      fin.className = 'viewer__end';
+      fin.innerHTML = '<p>¿Te interesa trabajar conmigo?</p><a class="btn" href="mailto:nextgunther21r@gmail.com?subject=Sobre%20' + encodeURIComponent(p.titulo) + '">Escríbeme</a>';
+      viewerScroll.appendChild(fin);
+      viewerScroll.scrollTop = 0;
+      viewer.hidden = false;
+      document.body.style.overflow = 'hidden';
+      viewerClose.focus();
+    }
+    function cerrarProyecto() {
+      viewer.hidden = true;
+      viewerScroll.innerHTML = '';
+      try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+      document.body.style.overflow = '';
+      if (ultimoOrigen) ultimoOrigen.focus();
+    }
+    document.querySelectorAll('.piece[data-proj]').forEach((c) => {
+      c.addEventListener('click', () => abrirProyecto(c.dataset.proj, c));
+      c.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirProyecto(c.dataset.proj, c); }
+      });
+    });
+    heroCaption.addEventListener('click', () => abrirProyecto(heroCaption.dataset.proj, heroCaption));
+    viewerClose.addEventListener('click', cerrarProyecto);
+    function moverProyecto(d) {
+      const i = (ORDEN.indexOf(actualSlug) + d + ORDEN.length) % ORDEN.length;
+      abrirProyecto(ORDEN[i], ultimoOrigen);
+    }
+    document.getElementById('viewerPrev').addEventListener('click', () => moverProyecto(-1));
+    document.getElementById('viewerNext').addEventListener('click', () => moverProyecto(1));
+    document.addEventListener('keydown', (e) => {
+      if (viewer.hidden) return;
+      if (e.key === 'Escape') cerrarProyecto();
+      else if (e.key === 'ArrowLeft') moverProyecto(-1);
+      else if (e.key === 'ArrowRight') moverProyecto(1);
+    });
+    // enlace directo a un proyecto: #p-lluvia
+    if (/^#p-/.test(location.hash) && PROYECTOS[location.hash.slice(3)]) abrirProyecto(location.hash.slice(3), null);
+
+    // ---------- Filtros ----------
+    const piezas = [...document.querySelectorAll('.piece')];
+    function aplicarFiltro(f) {
+      let n = 0;
+      piezas.forEach((p) => {
+        const ok = f === 'todos' || p.dataset.cat.split(' ').includes(f);
+        p.hidden = !ok;
+        p.classList.toggle('is-even', ok && (n++ % 2 === 1));
+        if (ok) p.classList.add('in');
+      });
+      document.getElementById('workCount').textContent = f === 'todos' ? piezas.length : n;
+      document.querySelectorAll('.chip').forEach((b) => {
+        b.classList.toggle('is-on', b.dataset.f === f);
+        b.setAttribute('aria-pressed', b.dataset.f === f);
+      });
+    }
+    document.querySelectorAll('.chip').forEach((b) => b.addEventListener('click', () => aplicarFiltro(b.dataset.f)));
+    aplicarFiltro('todos');
+
+    // ---------- Copiar correo ----------
+    const copyBtn = document.getElementById('copyMail');
+    copyBtn.addEventListener('click', async () => {
+      const note = document.getElementById('copyNote');
+      try { await navigator.clipboard.writeText(copyBtn.dataset.mail); note.textContent = 'Correo copiado.'; }
+      catch (e) { note.textContent = copyBtn.dataset.mail; }
+      setTimeout(() => { note.textContent = ''; }, 3000);
+    });
+
+    // ---------- Aparición suave y menú activo ----------
+    const els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      els.forEach((el) => io.observe(el));
+
+      const links = [...document.querySelectorAll('.menu a')];
+      const spy = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) links.forEach((a) => a.classList.toggle('is-active', a.dataset.sec === e.target.id));
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      ['trabajo', 'servicios', 'estudio', 'contacto'].forEach((id) => spy.observe(document.getElementById(id)));
+    } else {
+      els.forEach((el) => el.classList.add('in'));
+    }
+  </script>
+</body>
+</html>
