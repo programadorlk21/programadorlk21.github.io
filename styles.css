@@ -155,3 +155,5 @@ img { display: block; max-width: 100%; }
 .viewer__end { max-width: 1200px; margin: 56px auto 0; padding: 40px 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
 .viewer__end p { margin: 0; font-size: clamp(22px, 3vw, 40px); letter-spacing: -0.02em; }
 @media (max-width: 640px) { .viewer__bar { flex-direction: column; } .hero__lead { font-size: 26px; } .hero__caption { bottom: auto; top: 64px; } }
+
+.viewer__scroll.is-vertical img { max-width: 720px; }

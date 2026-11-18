@@ -51,12 +51,13 @@
 
     <!-- TRABAJO -->
     <section class="section" id="trabajo">
-      <h2 class="label">Trabajo <sup id="workCount">6</sup></h2>
+      <h2 class="label">Trabajo <sup id="workCount">7</sup></h2>
       <div class="filters" role="group" aria-label="Filtrar trabajo">
         <button type="button" class="chip is-on" data-f="todos">Todos</button>
         <button type="button" class="chip" data-f="btl">Campañas BTL</button>
         <button type="button" class="chip" data-f="branding">Branding</button>
         <button type="button" class="chip" data-f="packaging">Packaging</button>
+        <button type="button" class="chip" data-f="fotografia">Fotografía</button>
         <button type="button" class="chip" data-f="editorial">Editorial</button>
       </div>
       <div class="work">
@@ -69,6 +70,11 @@
         <div class="piece__img"><img src="assets/edad/p-03.jpg" alt="Portada de A su edad yo…" loading="lazy" width="1280" height="720"></div>
         <div class="piece__cap"><span class="piece__title">A su edad yo…</span><span class="piece__tag">UNICEF Guatemala · Campaña BTL · 2026</span></div>
         <p class="piece__desc">Campaña sobre trabajo infantil dirigida a comerciantes de mercado. Dirección estratégica e investigación en equipo de tres.</p>
+      </article>
+      <article class="piece reveal" role="button" tabindex="0" data-proj="serie" data-cat="fotografia" aria-label="Ver Serie fotográfica">
+        <div class="piece__img"><img src="assets/serie/cover.jpg" alt="Tres retratos de la serie fotográfica con luz de vela y de encendedor" loading="lazy" width="1280" height="720"></div>
+        <div class="piece__cap"><span class="piece__title">Serie fotográfica</span><span class="piece__tag">Concepto y edición · Fotografía · 2026</span></div>
+        <p class="piece__desc">Serie de retratos en baja luz sobre violencia contra la mujer: concepto propio y edición de color y contraste.</p>
       </article>
       <article class="piece reveal" role="button" tabindex="0" data-proj="valentia" data-cat="packaging btl" aria-label="Ver Doritos Twice">
         <div class="piece__img"><img src="assets/valentia/p-21.jpg" alt="Portada de Doritos Twice" loading="lazy" width="1280" height="720"></div>
@@ -165,10 +171,18 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     // ---------- Proyectos ----------
-    const ORDEN = ['lluvia', 'edad', 'valentia', 'lookagain', 'ojo', 'ballet'];
+    const ORDEN = ['lluvia', 'edad', 'serie', 'valentia', 'lookagain', 'ojo', 'ballet'];
     const PROYECTOS = {
       lluvia: { titulo: "30 Días de Lluvia", paginas: 31 },
       edad: { titulo: "A su edad yo…", paginas: 20 },
+      serie: { titulo: "Serie fotográfica", paginas: 6, vertical: true, alts: [
+        "Retrato en penumbra con el rostro apenas iluminado y los brazos cruzados",
+        "Mujer sentada de lado mientras otra mano le sujeta la muñeca, sobre fondo negro",
+        "Retrato frontal con la llama de un encendedor frente al rostro",
+        "Retrato iluminado por una vela que sostiene entre las manos",
+        "Retrato con los ojos vendados frente a un fondo de recortes de periódico",
+        "Retrato con una mano cubriendo la boca y una vela encendida"
+      ] },
       valentia: { titulo: "Doritos Twice", paginas: 30 },
       lookagain: { titulo: "LOOK AGAIN", paginas: 24 },
       ojo: { titulo: "OJO", paginas: 21 },
@@ -203,15 +217,16 @@
       if (!p) return;
       ultimoOrigen = origen;
       document.getElementById('viewerTitle').textContent = p.titulo;
-      document.getElementById('viewerMeta').textContent = (ORDEN.indexOf(slug) + 1) + ' / ' + ORDEN.length + ' · ' + p.paginas + ' páginas';
+      document.getElementById('viewerMeta').textContent = (ORDEN.indexOf(slug) + 1) + ' / ' + ORDEN.length + ' · ' + p.paginas + (p.vertical ? ' fotografías' : ' páginas');
       actualSlug = slug;
       try { history.replaceState(null, '', '#p-' + slug); } catch (e) {}
       viewerScroll.innerHTML = '';
+      viewerScroll.classList.toggle('is-vertical', !!p.vertical);
       for (let i = 1; i <= p.paginas; i++) {
         const img = document.createElement('img');
         img.src = 'assets/' + slug + '/p-' + String(i).padStart(2, '0') + '.jpg';
-        img.alt = p.titulo + ', página ' + i;
-        img.width = 1280; img.height = 720;
+        img.alt = (p.alts && p.alts[i - 1]) || (p.titulo + ', página ' + i);
+        img.width = p.vertical ? 1000 : 1280; img.height = p.vertical ? 1500 : 720;
         img.loading = i <= 2 ? 'eager' : 'lazy';
         viewerScroll.appendChild(img);
       }
